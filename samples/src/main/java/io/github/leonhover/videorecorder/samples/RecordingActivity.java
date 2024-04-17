@@ -57,7 +57,8 @@ public class RecordingActivity extends AppCompatActivity implements CameraView.C
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSS", Locale.getDefault());
     private static final String FILE_PATH = "/recordVideoRGB_new";
     private String createFileName() {
-        File file = new File("/sdcard" + FILE_PATH);
+        String externalPath = getExternalFilesDir(null).getPath();
+        File file = new File(externalPath + FILE_PATH);
         if (!file.exists()) {
             file.mkdirs();
         }

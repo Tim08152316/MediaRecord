@@ -1,6 +1,7 @@
 package io.github.leonhover.videorecorder.recorder.mediacodec;
 
 import android.graphics.SurfaceTexture;
+import android.media.MediaRecorder;
 import android.opengl.EGLContext;
 import android.text.TextUtils;
 import android.util.Log;
